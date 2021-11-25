@@ -1,0 +1,237 @@
+/*! RESET STYLE */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  color: black;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+button,
+input {
+  outline: none;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+.row-max-width {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+.w-1700 {
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btn {
+  border-radius: 5px;
+  background-color: #fcb800;
+  font-weight: bold;
+  color: #222;
+  transition: 0.4s;
+}
+.btn--normal {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+.btn--big {
+  padding: 24px 30px;
+  font-size: 24px;
+}
+.btn:hover {
+  background-color: #e3a500;
+}
+/* ! CUSTOM STYLE */
+header {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  transition: 0.4s;
+}
+.header {
+  height: 68px;
+  margin: 0 70px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu-item {
+  color: #222;
+  padding: 24px 30px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+.header__menu-item:hover {
+  color: #fcb800;
+}
+.main__header {
+  position: relative;
+  width: 100%;
+  padding: 26%;
+  background-image: url("./img/slide.jpeg");
+  background-repeat: no-repeat;
+}
+.main__header-content {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  max-width: 600px;
+}
+.main__header-tittle {
+  margin: 60px 0;
+  font-size: 60px;
+  font-weight: 200;
+}
+.main__header-span {
+  color: #fcb800;
+  font-weight: bold;
+}
+.main__header-paragraph {
+  line-height: 28px;
+  margin-bottom: 18px;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+strong {
+  color: black;
+  font-weight: 800;
+}
+
+.demo__header-title,
+.sp__header-title,
+.product__header-title {
+  font-size: 48px;
+  font-weight: 500;
+  margin: 48px 0;
+  line-height: 28px;
+}
+.demo__header-paragraph,
+.sp__header-paragraph,
+.product__header-paragraph {
+  margin: 0 365px 10px;
+  color: #666666;
+}
+.demo__header-span {
+  color: black;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.demo__header,
+.sp__header,
+.product__header {
+  text-align: center;
+  padding-bottom: 60px;
+}
+.demo__list,
+.sp__list,
+.product__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.demo__list-content,
+.sp__list-content,
+.product__list-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.demo__list-text,
+.sp__list-text,
+.product__list-text {
+  text-align: center;
+}
+.demo__list-text a,
+.sp__list-text a,
+.product__list-text a {
+  display: inline-block;
+  margin-top: 25px;
+  font-weight: bold;
+  color: black;
+  transition: 0.4s;
+}
+.demo__description,
+.sp__description,
+.product__description {
+  font-size: 14px;
+  color: #666666;
+}
+.demo__description span,
+.sp__description-span,
+.product__description-span {
+  font-weight: bold;
+}
+.demo__description-link i,
+.sp__description-link i,
+.product__description-link i {
+  color: black;
+  transition: 0.4s;
+}
+.shop-page,
+.product {
+  padding-top: 100px;
+  background-color: #efefef;
+}
+.demo__list-item img,
+.sp__list-item img,
+.product__list-item img {
+  margin-top: 40px;
+  transition: ease-out 0.4s;
+  margin-bottom: 0;
+}
+.demo__list-item img:hover,
+.sp__list-item img:hover,
+.product__list-item img:hover {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  box-shadow: 0 6px 14px 0 rgb(0 0 0 / 20%);
+}
+.sp__link:hover,
+.demo__link:hover,
+.product__link:hover {
+  color: #fcb800;
+}
+.demo__description-link i:hover,
+.sp__description-link i:hover,
+.product__description-link i:hover {
+  color: #fcb800;
+}
+.footer {
+  padding: 190px 0 180px;
+  text-align: center;
+}
+.footer__heading {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.footer__paragraph {
+  margin: 20px 0;
+  padding: 50px 0 80px;
+  font-size: 20px;
+  color: #666666;
+  letter-spacing: 1px;
+}
